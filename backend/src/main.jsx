@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { io } from 'socket.io-client';
 import './style.css';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API = import.meta.env.VITE_API_URL || 'https://fam-umad-production.up.railway.app/';
 const DASHBOARD_KEY = import.meta.env.VITE_DASHBOARD_KEY || '';
 const headers = DASHBOARD_KEY ? { Authorization: `Bearer ${DASHBOARD_KEY}` } : {};
 
