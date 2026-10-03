@@ -1,14 +1,9 @@
 {
-  "name": "central-hvh-monitor-backend",
+  "name": "central-hvh-monitor-frontend",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "discord.js": "^14.22.1",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "socket.io": "^4.8.1"
-  }
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" },
+  "dependencies": { "socket.io-client": "^4.8.1" },
+  "devDependencies": { "@vitejs/plugin-react": "^5.0.4", "vite": "^7.1.7", "react": "^19.1.1", "react-dom": "^19.1.1" },
+  "type": "module"
 }
